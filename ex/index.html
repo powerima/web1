@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            header{
+                background-color:blue;
+                height:90px;
+                line-height:90px;
+                text-align:center;
+                vertical-align:middle;
+            }
+            nav{
+                background-color:#6699ff;
+                width:100%;
+                height:45px;
+                display:table;
+                text-align:right;
+                vertical-align:middle;
+            }
+            section{
+                background-color:#cccccc;
+                height:550px;  
+                width:100%;          
+            }
+            footer{
+                background-color:#6699ff;
+                height:50px;
+                line-height:25px;
+                text-align:center;
+                vertical-align:middle;
+            }
+            #span1{
+                background-color:#ccbaaa;
+                width:300;
+                display:table-cell;
+                vertical-align:middle;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <font size=5> 쇼핑몰 회원관리 ver 1.0 </font>
+    </header>
+    <nav>
+        <span id="span1">
+            &emsp;<a href="index.html">홈으로</a>
+            &emsp;<a href="form.html">회원가입</a>&emsp;&emsp;&emsp;
+        </span>
+    </nav>
+    <section>
+        <form name="f1" action="form_ok.jsp" method="GET" >
+            <table border="1" width=450 align="center">
+                <caption>
+                    <h2><u>&emsp;고&emsp;객&emsp;등&emsp;록&emsp;</u></h2>
+                </caption>
+                <tr>
+                    <td align="right">이&nbsp;름</td>
+                    <td>
+                        <input type="text" name="name" size=10 maxlength="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">전화번호</td>
+                    <td>
+                        <input type="text" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">e-mail</td>
+                    <td>
+                        <input type="text" name="email" size=30>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">관심품목</td>
+                    <td>
+                        <input type="radio" name="p1" value="c" checked>컴퓨터
+                        <input type="radio" name="p1" value="g">가전
+                        <input type="radio" name="p1" value="m">미용
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">특이사항</td>
+                    <td align="center">
+                        <textarea cols=45 rows=5 name="etc">특이사항을 입력해 주세요.</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">사&nbsp;진</td>
+                    <td align="center">
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align=center>
+                        <input type="submit" value="등록">&emsp;
+                        <input type="reset" value="취소">
+                    </td>
+                </tr>
+            </table>        
+        </form>
+    </section>
+    <footer>
+        COPYRIGHT (C)2020. ALL RIGHT RESERVED
+    </footer>
+
+</body>
+</html>
